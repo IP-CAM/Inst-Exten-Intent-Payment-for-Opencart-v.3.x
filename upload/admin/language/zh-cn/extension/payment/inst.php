@@ -7,7 +7,7 @@ $_['heading_title']         = 'Inst Payment';
 $_['text_extension']        = '扩展';
 $_['text_success']          = '成功：Inst Payment配置已修改！';
 $_['text_edit']             = '编辑';
-$_['text_inst']             = '<a target="_BLANK" href="https://www.inst.money/"><img src="view/image/payment/inst.png" alt="Inst Pay" title="Inst Pay" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_inst']             = '<a target="_BLANK" href="https://www.inst.money/"><img src="view/image/payment/inst.png" width="100" height="40" alt="Inst Pay" title="Inst Pay" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_enabled_webhooks'] = '启用 (url : https://{host}?route=extension/payment/inst/callback)';
 
 
@@ -19,7 +19,7 @@ $_['entry_api_passphrase']  = 'API Password:';
 $_['entry_webhooks_status'] = '订单状态推送:';
 $_['entry_geo_zone']        = '区域:';
 $_['entry_sort_order']      = '排序:';
-$_['entry_status']          = '状态:';
+$_['entry_status']          = '支付方式启用状态:';
 
 // Error
 $_['error_host']            = '请输入 Domain!';

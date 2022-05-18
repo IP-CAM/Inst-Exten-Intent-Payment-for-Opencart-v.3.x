@@ -29,6 +29,20 @@
                       class="form-horizontal">
                     <div class="tab-content">
                         <div class="form-group required">
+                            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+                            <div class="col-sm-10">
+                                <select name="payment_inst_status" id="input-status" class="form-control">
+                                    {% if payment_inst_status %}
+                                        <option value="1" selected="selected">{{ text_enabled }}</option>
+                                        <option value="0">{{ text_disabled }}</option>
+                                    {% else %}
+                                        <option value="1">{{ text_enabled }}</option>
+                                        <option value="0" selected="selected">{{ text_disabled }}</option>
+                                    {% endif %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group required">
                             <label class="col-sm-2 control-label" for="input-host">{{ entry_host }}</label>
                             <div class="col-sm-10">
                                 <input type="text" name="payment_inst_host" value="{{ payment_inst_host }}" placeholder="{{ 'https://api.firstchampion.io' }}" id="input-host" class="form-control"/>
@@ -97,20 +111,6 @@
                             <label class="col-sm-2 control-label" for="input-sort-order">{{ entry_sort_order }}</label>
                             <div class="col-sm-10">
                                 <input type="text" name="payment_inst_sort_order" value="{{ payment_inst_sort_order }}" placeholder="{{ entry_sort_order }}" id="input-sort-order" class="form-control"/>
-                            </div>
-                        </div>
-                        <div class="form-group required">
-                            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
-                            <div class="col-sm-10">
-                                <select name="payment_inst_status" id="input-status" class="form-control">
-                                    {% if payment_inst_status %}
-                                        <option value="1" selected="selected">{{ text_enabled }}</option>
-                                        <option value="0">{{ text_disabled }}</option>
-                                    {% else %}
-                                        <option value="1">{{ text_enabled }}</option>
-                                        <option value="0" selected="selected">{{ text_disabled }}</option>
-                                    {% endif %}
-                                </select>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ $_['heading_title']         = 'Inst Payment';
 $_['text_extension']        = 'extension';
 $_['text_success']          = 'success：Inst Payment config has changed！';
 $_['text_edit']             = 'edit';
-$_['text_inst']             = '<a target="_BLANK" href="https://www.inst.money/"><img src="view/image/payment/inst.png" alt="Inst Pay" title="Inst Pay" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_inst']             = '<a target="_BLANK" href="https://www.inst.money/"><img src="view/image/payment/inst.png" width="100" height="40" alt="Inst Pay" title="Inst Pay" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_enabled_webhooks'] = 'enabled (url : https://{host}?route=extension/payment/inst/callback)';
 
 
@@ -19,7 +19,7 @@ $_['entry_api_passphrase']  = 'API Password:';
 $_['entry_webhooks_status'] = 'Webhooks of order status:';
 $_['entry_geo_zone']        = 'Geo Zone:';
 $_['entry_sort_order']      = 'Sort Order:';
-$_['entry_status']          = 'Status:';
+$_['entry_status']          = 'Payment Method Enabled:';
 
 // Error
 $_['error_host']            = 'Please Input Domain!';

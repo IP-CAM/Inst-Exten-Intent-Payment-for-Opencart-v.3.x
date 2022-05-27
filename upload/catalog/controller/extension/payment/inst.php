@@ -52,7 +52,7 @@ class ControllerExtensionPaymentInst extends Controller {
 //            'product_info' => $product_info, // todo
             'shipping_info' => $shipping_info,
 //            'network' => 'Mastercard', // 同时支持Mastercard和Visa，不需要传
-            'return_url' => $host . '/index.php?route=common/home',
+//            'return_url' => $host . '/index.php?route=common/home',
         ));
 
         $sign = $this->sign($timestamp, $method, $requestPath, '', $key, $secret, $post_data);
